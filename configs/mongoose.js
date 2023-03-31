@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 const DB_NAME = "Placement-cell";
 
 //default port for mongodb is 27017
-const connectionURI = `mongodb://127.0.0.1:27017/${DB_NAME}`;
+// const connectionURI = `mongodb://127.0.0.1:27017/${DB_NAME}`;
+const connectionURI =  "mongodb+srv://abhishekkumaras007:5lcyvzMGoczs2drK@cluster0.3abx6oz.mongodb.net/?retryWrites=true&w=majority";
 
 //connecting mongoose with the given uri,in this case it is localhost
 mongoose.connect(connectionURI, {
@@ -22,3 +23,20 @@ db.once("open", () => {
 });
 
 module.exports = db;
+
+
+
+
+
+
+
+
+
+
+
+// const mongoose = require('mongoose');
+// async function main(){
+//     await mongoose.connect('mongodb+srv://abhishekkumaras007:5lcyvzMGoczs2drK@cluster0.3abx6oz.mongodb.net/?retryWrites=true&w=majority');
+//     console.log("connection Successfull !! ");
+// }
+// main().catch(error =>console.log("connection not successfull !!"));
