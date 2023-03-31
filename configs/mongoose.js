@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 //this will be DB name which will be seen in mongoDB(compass,robo3t etc)
-const DB_NAME = "Placement-cell";
+const DB_NAME = "test";
 
 //default port for mongodb is 27017
 // const connectionURI = `mongodb://127.0.0.1:27017/${DB_NAME}`;
